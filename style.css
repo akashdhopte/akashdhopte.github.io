@@ -126,7 +126,6 @@ left: 50%;
 transform: translate(-50%, -50%) scale(0);
 color: rgb(78, 76, 76);
 font-size: 13rem;
-/* letter-spacing: 5px; */
 z-index: -1;
 transition: .3s ease letter-spacing;
 }
@@ -191,9 +190,7 @@ letter-spacing: initial;
 #header .hamburger.active .bar::before{
     bottom: 0;
 }
-
-
-/* end ofheader section */
+/* end of header section */
 /* hello section */
 #hello{
     background-image: url(./image/background.jpg);
@@ -254,12 +251,9 @@ letter-spacing: initial;
 }#hello h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
-
 /* end hello section */
 
 /* service section */
-
-/* #service{} */
 #service .service{
     flex-direction: column;
     text-align: center;
@@ -267,13 +261,6 @@ letter-spacing: initial;
     margin: 0 auto;
     padding: 50px 0 0 0;
 }
-/* #service .service-top p{
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
-} */
 #service .service-bottom{
     display: flex;
     align-items: center;
@@ -326,6 +313,7 @@ letter-spacing: initial;
 }
 #project .project-header h1{
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 #project .all-project{
     display: flex;
