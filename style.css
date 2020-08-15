@@ -306,16 +306,21 @@ letter-spacing: initial;
     border-radius: 50%;
     justify-content: flex-start;
 }
-#education .education-item h2 {
+#education .education-item .item-right h2 {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-#education .education-item h3 {
+#education .education-item .item-right h3 {
     font-size: 1.5rem;
     color: white;
     margin-bottom: 10px;
+}
+#education .education-item .item-right{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 /* end of education section */
 /* project section */
