@@ -274,22 +274,37 @@ letter-spacing: initial;
 }
 #internship .internship-card{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 50px;
-    flex-direction: column;
-    flex-basis: 60%;
+    flex-direction: row;
+    /* flex-basis: 60%; */
     min-width: 320px;
     min-height: 150px;
     padding: 30px;
     border-radius: 20px;
     background-color: blueviolet; 
     background-image: linear-gradient(to bottom left, rgb(41, 13, 70), rgb(129, 129, 129));
-    background-size: home;
+    background-size: cover;
     margin: 10px 5%;
     border: 1px solid;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+    /*     flex-basis: 80%;
+    min-width: 320px;
+    min-height: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: blueviolet; 
+    background-image: linear-gradient(to bottom left, blueviolet, rgb(157, 216, 235));
+    background-size: home;
+    margin: 10px 5%;
+    border: 1px solid;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5); */
 
 }
 #internship .internship-bottom h2 {
@@ -331,7 +346,7 @@ letter-spacing: initial;
     border-radius: 20px;
     background-color: blueviolet; 
     background-image: linear-gradient(to bottom left, blueviolet, rgb(157, 216, 235));
-    background-size: home;
+    background-size: cover;
     margin: 10px 5%;
     border: 1px solid;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
