@@ -8,10 +8,6 @@ html{
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
-tab{
-    display: inline-block;
-    margin-left: 40px;
-}
 a{
     text-decoration: none;
 }
