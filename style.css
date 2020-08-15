@@ -302,8 +302,9 @@ letter-spacing: initial;
 #education .education-bottom .icon {
     height: 80px;
     width: 80px;
+    min-height: 80px;
     min-width: 80px;
-    margin: 20px;
+    margin-right: 10px;
 }
 #education .education-bottom .icon img {
     border-radius: 50%;
