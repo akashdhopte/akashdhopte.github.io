@@ -255,6 +255,46 @@ letter-spacing: initial;
     animation-delay: 2.5s;
 }
 /* end home section */
+/* internship section */
+#internship .internship{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+#internship .internship-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    flex-direction: column;
+    flex-basis: 80%;
+    min-width: 320px;
+    min-height: 150px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: blueviolet; 
+    background-image: linear-gradient(to bottom left, rgb(41, 13, 70), rgb(129, 129, 129));
+    background-size: home;
+    margin: 10px 5%;
+    border: 1px solid;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+
+}
+#internship .internship-bottom h2 {
+    font-size: 2rem;
+    color: rgb(153, 191, 248);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#internship .internship-bottom h3 {
+    font-size: 1.5rem;
+    color: rgb(147, 164, 241);
+    margin-bottom: 10px;
+}
+/* end of internship section */
 /* education section */
 #education .education{
     flex-direction: column;
