@@ -261,62 +261,59 @@ letter-spacing: initial;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 0 0px 0;
+    padding: 50px 0 0 0;
 }
 #internship .internship-top{
     padding-bottom: 50px;
 }
 #internship .internship-bottom{
-    background-image: linear-gradient(to bottom right, rgb(247, 222, 222),rgb(124, 121, 121));
-    max-width: 80%; 
-    padding: 50px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    background-image: linear-gradient(to bottom left, rgb(74, 142, 165),rgb(22, 19, 26) );
+    padding: 30px;
     border-radius: 20px;
 }
 #internship .internship-card{
+    flex-basis: 80%;
+    min-width: 320px;
+    min-height: 150px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    flex-direction: row;
-    /* flex-basis: 60%; */
-    min-width: 320px;
-    min-height: 150px;
+    flex-direction: column;
     padding: 30px;
     border-radius: 20px;
     background-color: blueviolet; 
-    background-image: linear-gradient(to bottom left, rgb(41, 13, 70), rgb(129, 129, 129));
+    background-image: linear-gradient(to bottom left, blueviolet, rgb(96, 196, 230));
     background-size: cover;
     margin: 10px 5%;
     border: 1px solid;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
-    /*     flex-basis: 80%;
-    min-width: 320px;
-    min-height: 150px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: blueviolet; 
-    background-image: linear-gradient(to bottom left, blueviolet, rgb(157, 216, 235));
-    background-size: home;
-    margin: 10px 5%;
-    border: 1px solid;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5); */
-
+}
+#internship .internship-card::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 #internship .internship-bottom h2 {
     font-size: 2rem;
-    color: rgb(153, 191, 248);
+    color: rgb(139, 182, 247);
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 #internship .internship-bottom h3 {
     font-size: 1.5rem;
-    color: rgb(147, 164, 241);
+    color: rgb(48, 48, 49);
     margin-bottom: 10px;
+    /* align-content: center;
+    align-items: center;
+    justify-content: center; */
 }
 /* end of internship section */
 /* education section */
