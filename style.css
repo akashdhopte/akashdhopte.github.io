@@ -276,6 +276,7 @@ letter-spacing: initial;
 }
 #education .education-item{
     flex-basis: 80%;
+    min-width: 320px;
     min-height: 150px;
     display: flex;
     align-items: flex-start;
