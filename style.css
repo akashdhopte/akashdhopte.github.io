@@ -8,6 +8,10 @@ html{
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
+tab{
+    display: inline-block;
+    margin-left: 40px;
+}
 a{
     text-decoration: none;
 }
@@ -21,7 +25,7 @@ a{
 img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: home;
 }
 p{
     color: rgb(105, 87, 87);
@@ -38,7 +42,7 @@ p{
     letter-spacing: .2rem;
     text-align: center;
 }
-.section-title span{
+span{
     color: tomato;
 }
 .ctn{
@@ -65,6 +69,9 @@ p{
 }
 .brand span{
     color: tomato;
+}
+h2{
+    margin-top: 20px;
 }
 /* header section */
 #header{
@@ -191,8 +198,8 @@ letter-spacing: initial;
     bottom: 0;
 }
 /* end of header section */
-/* hello section */
-#hello{
+/* home section */
+#home{
     background-image: url(./image/background.jpg);
     background-size: cover;
     background-position: top center;
@@ -200,7 +207,7 @@ letter-spacing: initial;
     background-repeat: no-repeat;
     z-index: 1;
 }
-#hello::after{
+#home::after{
     content: '';
     position: absolute;
     left: 0;
@@ -211,13 +218,13 @@ letter-spacing: initial;
     opacity: 0.7;
     z-index: -1;
 }
-#hello .hello{
+#home .home{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
 }
-#hello h1{
+#home h1{
     display: block;
     width: fit-content;
     font-size: 4rem;
@@ -226,15 +233,15 @@ letter-spacing: initial;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
 }
-#hello h1:nth-child(1){
+#home h1:nth-child(1){
     animation-delay: 1s;
-}#hello h1:nth-child(2){
+}#home h1:nth-child(2){
     animation-delay: 2s;
-}#hello h1:nth-child(3){
+}#home h1:nth-child(3){
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
 }
-#hello h1 span{
+#home h1 span{
     position: absolute;
     top: 0;
     left: 0;
@@ -244,46 +251,45 @@ letter-spacing: initial;
     animation: text_reveal_box 1s ease;
     animation-delay: .3s;
 }
-#hello h1:nth-child(1) span{
+#home h1:nth-child(1) span{
     animation-delay: .5s;
-}#hello h1:nth-child(2) span{
+}#home h1:nth-child(2) span{
     animation-delay: 1.5s;
-}#hello h1:nth-child(3) span{
+}#home h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
-/* end hello section */
-
-/* service section */
-#service .service{
+/* end home section */
+/* education section */
+#education .education{
     flex-direction: column;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 0 0 0;
 }
-#service .service-bottom{
+#education .education-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
 }
-#service .service-item{
+#education .education-item{
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: row;
     padding: 30px;
     border-radius: 20px;
     background-color: blueviolet; 
     background-image: linear-gradient(to bottom left, blueviolet, rgb(157, 216, 235));
-    background-size: cover;
+    background-size: home;
     margin: 10px 5%;
     border: 1px solid;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
 }
-#service .service-item::after{
+#education .education-item::after{
     content: '';
     position: absolute;
     left: 0;
@@ -291,19 +297,27 @@ letter-spacing: initial;
     height: 100%;
     width: 100%;
 }
-#service .service-bottom .icon {
+#education .education-bottom .icon {
     height: 80px;
     width: 80px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
-#service .service-item h2 {
+#education .education-bottom .icon img {
+    border-radius: 50%;
+    justify-content: flex-start;
+}
+#education .education-item h2 {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-/* end of service section */
-
+#education .education-item h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+/* end of education section */
 /* project section */
 #project .project{
     flex-direction: column;
@@ -414,6 +428,7 @@ letter-spacing: initial;
     position: relative;
     height: 100%;
     width: 100%;
+    max-width: 250px;
     border: 10px solid white;
 }
 #about .col-left .about-img::after{
@@ -552,17 +567,11 @@ letter-spacing: initial;
     h1.section-title{
         font-size: 6rem;
     }
-    /* hello */
-    #hello h1{
+    /* home */
+    #home h1{
         font-size: 7rem;
     }
-    /* end of hello */
-    /* service section */
-    #service .service-bottom .service-item{
-        flex-basis: 45%;
-        margin: 2.5%;
-    }
-    /* end of service section */
+    /* end of home */
     /* project */
     #project .project-item{
         height: 400px;
@@ -582,6 +591,12 @@ letter-spacing: initial;
         height: 100%;
     }
     /* end of project */
+    /* education section */
+    #education .education-bottom .education-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /* end of education section */
     /* about */
     #about .about{
         flex-direction: row;
@@ -630,17 +645,16 @@ letter-spacing: initial;
         height: 80px;
         width: 80px;
     }
-    /* #contact .contact-item .icon img{
-        object-fit: contain;
-    } */
     /* end of contact */
 }
 /* end of  media query for template */
 /* media query for desktop */
 @media only screen and (min-width:1200px){
-    #service .service-bottom .service-item{
-        flex-basis: 22%;
+    #education .education-bottom .education-item{
+        flex-basis: 40%;
         margin: 1.5%;
+        align-content: flex-start;
+        justify-items: flex-start;
     }
     #header .hamburger{
         display: none;
@@ -661,6 +675,5 @@ letter-spacing: initial;
     #header .nav-list ul a::after{
         display: none;
     }
-
 }
 /* end of media query for desktop */
