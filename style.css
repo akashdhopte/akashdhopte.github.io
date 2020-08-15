@@ -268,7 +268,7 @@ letter-spacing: initial;
 }
 #internship .internship-bottom{
     background-image: linear-gradient(to bottom right, rgb(247, 222, 222),rgb(124, 121, 121));
-    max-width: 80%;
+    max-width: 80%; 
     padding: 50px 0px 50px 0px;
     border-radius: 20px;
 }
