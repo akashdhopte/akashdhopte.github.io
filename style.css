@@ -523,6 +523,13 @@ letter-spacing: initial;
 }
 #footer .social-item:hover img{
     filter: invert(0);
+    color: black;
+}
+#footer .social-item h3{
+    color: white;
+}
+#footer .social-item:hover{
+    color: black;
 }
 #footer p{
     font-size: 1.3rem;
